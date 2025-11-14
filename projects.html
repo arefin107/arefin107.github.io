@@ -41,30 +41,58 @@
             </div>
 
             <div class="row g-3">
+                <!-- Inventory Project -->
                 <div class="col-md-6">
-                    <a href="https://inventory.e2rsoft.com/" target="_blank" class="text-decoration-none">
-                        <div class="card card-custom h-100 p-3">
-                            <h5 class="mb-2">Inventory Management Dashboard</h5>
-                            <img src="assets/img/inventory.jpg" class="project-image mb-3" alt="Inventory Dashboard">
-                            <p class="small text-muted">
-                                A full inventory management system with dashboard, product handling, stock movement,
-                                user roles, and real-time business metrics.
-                            </p>
+                    <div class="card card-custom h-100 p-3">
+                        <h5 class="mb-2">Inventory Management Dashboard</h5>
+                        <img src="assets/img/inventory.jpg"
+                             class="project-image mb-3"
+                             alt="Inventory Dashboard">
+                        <p class="small text-muted">
+                            A full inventory management system with dashboard, product handling, stock movement,
+                            user roles, and real-time business metrics.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="https://inventory.e2rsoft.com/"
+                               target="_blank"
+                               class="btn btn-primary btn-sm">
+                                View Project →
+                            </a>
+                            <button type="button"
+                                    class="btn btn-outline-secondary btn-sm"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#inventoryModal">
+                                Preview
+                            </button>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
+                <!-- LaPreTina Project -->
                 <div class="col-md-6">
-                    <a href="https://lapretina.e2rsoft.com/" target="_blank" class="text-decoration-none">
-                        <div class="card card-custom h-100 p-3">
-                            <h5 class="mb-2">LaPreTina Product Showcase</h5>
-                            <img src="assets/img/lapretina.jpg" class="project-image mb-3" alt="Lapretina Store">
-                            <p class="small text-muted">
-                                A stylish e-commerce product showcase platform featuring category filters, product grid,
-                                pricing details, and a clean user shopping interface.
-                            </p>
+                    <div class="card card-custom h-100 p-3">
+                        <h5 class="mb-2">LaPreTina Product Showcase</h5>
+                        <img src="assets/img/lapretina.jpg"
+                             class="project-image mb-3"
+                             alt="Lapretina Store">
+                        <p class="small text-muted">
+                            A stylish e-commerce product showcase platform featuring category filters, product grid,
+                            pricing details, and a clean user shopping interface.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="https://lapretina.e2rsoft.com/"
+                               target="_blank"
+                               class="btn btn-primary btn-sm">
+                                View Project →
+                            </a>
+                            <button type="button"
+                                    class="btn btn-outline-secondary btn-sm"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#lapretinaModal">
+                                Preview
+                            </button>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="col-md-6">
@@ -128,6 +156,41 @@
 
             <div class="mt-4">
                 <a href="contact.html" class="btn btn-primary btn-sm">Hire Me for a Similar Project →</a>
+            </div>
+        </div>
+    </div>
+    <!-- Inventory fullscreen preview -->
+    <div class="modal fade" id="inventoryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white">Inventory Management Dashboard</h5>
+                    <button type="button" class="btn-close btn-close-white"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center p-0">
+                    <img src="assets/img/inventory.jpg"
+                         alt="Inventory Dashboard Preview"
+                         class="preview-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LaPreTina fullscreen preview -->
+    <div class="modal fade" id="lapretinaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white">LaPreTina Product Showcase</h5>
+                    <button type="button" class="btn-close btn-close-white"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center p-0">
+                    <img src="assets/img/lapretina.jpg"
+                         alt="LaPreTina Preview"
+                         class="preview-img">
+                </div>
             </div>
         </div>
     </div>
