@@ -1,51 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio - .NET & AI Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Monirul Arefin - MA•AI Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <style>
-        body { background: #0d1117; color: #fff; font-family: 'Segoe UI'; }
-        .hero { padding: 80px 20px; text-align: center; }
-        .card { background: #161b22; border: none; }
+        /* LIGHT THEME (Material style) */
+        :root {
+            --bg-main: #ECEFF1;
+            --bg-card: #FFFFFF;
+            --accent: #1976D2;
+            --accent-soft: #03A9F4;
+            --text-main: #1F2933;
+            --text-muted: #607D8B;
+            --chip-border: rgba(0,0,0,0.08);
+            --nav-bg: #FFFFFF;
+            --nav-link: #37474F;
+            --nav-link-active: #1976D2;
+        }
+
+        /* DARK THEME OVERRIDES */
+        body.theme-dark {
+            --bg-main: #0d1117;
+            --bg-card: #161b22;
+            --accent: #0A84FF;
+            --accent-soft: #36CFC9;
+            --text-main: #ffffff;
+            --text-muted: #d0d7de;
+            --chip-border: rgba(255,255,255,0.12);
+            --nav-bg: #050812;
+            --nav-link: #ECEFF1;
+            --nav-link-active: #36CFC9;
+        }
+
+        body {
+            background: var(--bg-main);
+            color: var(--text-main);
+            font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            transition: background 0.25s ease, color 0.25s ease;
+        }
+
+        a { color: var(--accent); }
+        a:hover { color: var(--accent-soft); }
+
+        .navbar-custom {
+            background: var(--nav-bg);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            transition: background 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: var(--nav-link);
+        }
+
+        .navbar-custom .nav-link.active {
+            color: var(--nav-link-active);
+            font-weight: 600;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: var(--nav-link-active);
+        }
+
+        .page-wrap { min-height: 100vh; padding: 40px 0; }
+
+        .card-custom {
+            background: var(--bg-card);
+            border-radius: 0.9rem;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
+        }
+
+        .card-custom:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            transform: translateY(-2px);
+        }
+
+        .sidebar {
+            border-right: 1px solid rgba(0,0,0,0.06);
+        }
+
+        body.theme-dark .sidebar {
+            border-right: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 999px;
+            border: 1px solid var(--chip-border);
+            font-size: 0.8rem;
+            margin: 3px 3px;
+            color: var(--text-muted);
+            background: rgba(255,255,255,0.5);
+        }
+
+        body.theme-dark .tag {
+            background: rgba(255,255,255,0.03);
+        }
+
+        .section-title {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            font-weight: 600;
+            margin-bottom: .4rem;
+            color: var(--accent);
+        }
+
+        .name-title { font-size: 2rem; font-weight: 700; }
+        .role-title { font-size: 1.05rem; font-weight: 500; color: var(--text-muted); }
+
+        .pill-badge {
+            border-radius: 999px;
+            padding: 4px 12px;
+            font-size: 0.78rem;
+            border: 1px solid var(--chip-border);
+            color: var(--text-muted);
+            background: rgba(255,255,255,0.7);
+        }
+
+        body.theme-dark .pill-badge {
+            background: rgba(255,255,255,0.03);
+        }
+
+        .brand-text {
+            font-weight: 800;
+            font-size: 0.95rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .brand-text span.dot { color: var(--accent-soft); padding: 0 4px; }
+        .brand-text span.ai { color: var(--accent-soft); }
+
+        #backToTop {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: none;
+            z-index: 1000;
+        }
+
+        @media (max-width: 767.98px) {
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid rgba(0,0,0,0.06);
+                margin-bottom: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+            body.theme-dark .sidebar {
+                border-bottom: 1px solid rgba(255,255,255,0.06);
+            }
+        }
     </style>
 </head>
-<body>
+<body class="theme-light">
 
-<div class="hero">
-    <h1 class="fw-bold">Hi, I'm a Full-Stack .NET & Python AI Developer</h1>
-    <p class="lead">ASP.NET MVC • .NET Web API • SQL Server • Python AI • Bootstrap • jQuery</p>
+<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/img/monirul.arefin.jpg" alt="MA AI Logo" width="32" height="32" class="me-2 rounded">
+        <span class="brand-text">MA<span class="dot">•</span><span class="ai">AI</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <button id="themeToggle" class="btn btn-sm btn-outline-primary">
+            🌞 Light
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <div class="container">
+    <div class="card card-custom shadow-lg">
+      <div class="row g-0">
+        <aside class="col-md-4 sidebar p-4 p-md-4">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="brand-text">
+                MA<span class="dot">•</span><span class="ai">AI</span>
+            </div>
+            <span class="pill-badge">Software Engineer</span>
+          </div>
+
+          <section class="mb-4">
+            <div class="section-title">Contact</div>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-1">📞 <a href="tel:+8801727698588" class="text-decoration-none">+880 1727 698 588</a></li>
+              <li class="mb-1">✉️ <a href="mailto:arefin.monirul@gmail.com" class="text-decoration-none">arefin.monirul@gmail.com</a></li>
+              <li class="mb-1">🔗 <a href="https://www.linkedin.com/in/arefin-monirul" target="_blank" class="text-decoration-none">linkedin.com/in/arefin-monirul</a></li>
+            </ul>
+          </section>
+
+          <section class="mb-4">
+            <div class="section-title">Key Skills</div>
+            <div>
+              <span class="tag">.NET C#</span>
+              <span class="tag">ASP.NET MVC</span>
+              <span class="tag">.NET API</span>
+              <span class="tag">Microsoft SQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">jQuery</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">Python</span>
+              <span class="tag">AI API</span>
+            </div>
+          </section>
+
+          <section>
+            <div class="section-title">Activities & Interests</div>
+            <ul class="list-unstyled small mb-0">
+              <li>🚴‍♂️ Cycling</li>
+              <li>🐠 Aquarist</li>
+              <li>🎮 Online Gaming</li>
+            </ul>
+          </section>
+        </aside>
+
+        <main class="col-md-8 p-4 p-md-5">
+          <header class="mb-4">
+            <h1 class="name-title mb-1">Monirul Arefin</h1>
+            <div class="role-title mb-2">Software Engineer • .NET &amp; AI API Developer</div>
+          </header>
+
+          <section id="profile" class="mb-4">
+            <div class="section-title">Profile</div>
+            <p class="small text-muted mb-0">
+              I have a broad understanding of how things develop and change over time, which helps me quickly
+              adjust to new situations. When faced with problems, I'm good at finding solutions and explaining
+              them clearly to others. I enjoy working with teams to make things better and keep them moving forward.
+            </p>
+          </section>
+
+          <section id="experience" class="mb-4">
+            <div class="section-title">Experience</div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-1">Software Engineer</h5>
+                <span class="badge rounded-pill text-bg-primary">Aug 2014 — Present</span>
+              </div>
+              <ul class="small text-muted mb-2">
+                <li>Front-end programming (HTML, CSS, Bootstrap, jQuery, JavaScript)</li>
+                <li>Back-end development using .NET, Web API, PHP, and SQL databases</li>
+                <li>Building and maintaining user-friendly UI &amp; UX for business applications</li>
+                <li>Designing and consuming REST APIs and integrating third-party services</li>
+                <li>Adapting quickly to new technologies and development environments</li>
+                <li>Strong problem-solving skills and clear technical communication within teams</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="education" class="mb-4">
+            <div class="section-title">Education</div>
+            <div>
+              <h5 class="mb-1">BSc in Computer Engineering</h5>
+              <div class="small text-muted">
+                American International University-Bangladesh (AIUB) • 2008 – 2012
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-4">
+            <div class="section-title">Highlighted Projects</div>
+            <div class="card card-custom mb-3 p-3">
+              <h6 class="mb-1">CRM Web Application (.NET MVC + SQL)</h6>
+              <p class="small text-muted mb-1">
+                Full-stack development of a CRM system with lead tracking, reporting, and role-based access.
+              </p>
+            </div>
+            <div class="card card-custom mb-3 p-3">
+              <h6 class="mb-1">AI-powered Chat-to-SQL API (Python + OpenAI)</h6>
+              <p class="small text-muted mb-1">
+                Natural language to SQL API that connects to SQL Server and returns real-time business answers.
+              </p>
+            </div>
+            <a href="projects.html" class="btn btn-outline-primary btn-sm">View All Projects →</a>
+          </section>
+
+          <section class="mt-4">
+            <div class="section-title">Work With Me</div>
+            <p class="small text-muted">
+              I am available for part-time remote roles (2–3 hours/day), freelance projects, bug fixing,
+              and long-term collaboration on .NET, SQL, front-end, and AI-powered back-end systems.
+            </p>
+            <a href="contact.html" class="btn btn-primary me-2 mb-2">📩 Contact Me</a>
+            <a href="https://www.linkedin.com/in/arefin-monirul" target="_blank" class="btn btn-outline-secondary mb-2">
+              🔗 View LinkedIn
+            </a>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="container">
-    <h2 class="mb-4">Skills</h2>
-    <div class="row">
-        <div class="col-md-3"><div class="card p-3">.NET / C# / MVC</div></div>
-        <div class="col-md-3"><div class="card p-3">Web API</div></div>
-        <div class="col-md-3"><div class="card p-3">SQL Server / MySQL</div></div>
-        <div class="col-md-3"><div class="card p-3">Python AI / FastAPI</div></div>
-    </div>
+<button id="backToTop" class="btn btn-primary btn-sm rounded-circle">↑</button>
 
-    <h2 class="mt-5 mb-3">Projects</h2>
-    <div class="card p-3 mb-3">
-        <h5>.NET Web API + SQL CRM Module</h5>
-        <p>Developed CRUD, authentication, reporting system.</p>
-    </div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="card p-3 mb-3">
-        <h5>AI Chatbot API (Python + OpenAI)</h5>
-        <p>Natural language to SQL, FastAPI microservice.</p>
-    </div>
+<script>
+  $(function () {
+    var $btnTop = $("#backToTop");
+    var $body = $("body");
+    var $toggle = $("#themeToggle");
 
-    <div class="card p-3 mb-3">
-        <h5>YOLO Object Detection API</h5>
-        <p>Product detection and custom training setup.</p>
-    </div>
+    var savedTheme = localStorage.getItem("ma_theme") || "light";
+    setTheme(savedTheme);
 
-    <div class="text-center mt-5">
-        <a href="mailto:your@email.com" class="btn btn-primary btn-lg">Hire Me</a>
-    </div>
-</div>
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 200) $btnTop.fadeIn();
+      else $btnTop.fadeOut();
+    });
+
+    $btnTop.on("click", function () {
+      $("html, body").animate({ scrollTop: 0 }, 500);
+    });
+
+    $toggle.on("click", function () {
+      var current = $body.hasClass("theme-dark") ? "dark" : "light";
+      var next = current === "light" ? "dark" : "light";
+      setTheme(next);
+    });
+
+    function setTheme(theme) {
+      if (theme === "dark") {
+        $body.removeClass("theme-light").addClass("theme-dark");
+        $toggle.removeClass("btn-outline-primary").addClass("btn-outline-light")
+               .text("🌙 Dark");
+      } else {
+        $body.removeClass("theme-dark").addClass("theme-light");
+        $toggle.removeClass("btn-outline-light").addClass("btn-outline-primary")
+               .text("🌞 Light");
+      }
+      localStorage.setItem("ma_theme", theme);
+    }
+  });
+</script>
 
 </body>
 </html>
