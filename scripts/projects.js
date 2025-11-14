@@ -23,3 +23,25 @@
         localStorage.setItem("ma_theme", theme);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // INVENTORY
+    const inventoryCarousel = document.querySelector('#inventoryCarousel');
+    const inventoryIndicators = document.querySelectorAll('#inventoryModal .carousel-indicators button');
+
+    inventoryCarousel.addEventListener('slide.bs.carousel', function (e) {
+        inventoryIndicators.forEach(btn => btn.classList.remove('active'));
+        inventoryIndicators[e.to].classList.add('active');
+    });
+
+    // LAPRETINA
+    const lapretinaCarousel = document.querySelector('#lapretinaCarousel');
+    const lapretinaIndicators = document.querySelectorAll('#lapretinaModal .carousel-indicators button');
+
+    lapretinaCarousel.addEventListener('slide.bs.carousel', function (e) {
+        lapretinaIndicators.forEach(btn => btn.classList.remove('active'));
+        lapretinaIndicators[e.to].classList.add('active');
+    });
+
+});

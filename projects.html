@@ -80,7 +80,7 @@
                             pricing details, and a clean user shopping interface.
                         </p>
                         <div class="d-flex flex-wrap gap-2">
-                            <a href="https://lapretina.e2rsoft.com/"
+                            <a href="https://lapretina.e2rsoft.com/productlist.aspx"
                                target="_blank"
                                class="btn btn-primary btn-sm">
                                 View Project →
@@ -162,7 +162,7 @@
 
     <!-- Inventory fullscreen preview (carousel) -->
     <div class="modal fade" id="inventoryModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content bg-dark">
                 <div class="modal-header border-0">
                     <h5 class="modal-title text-white">Inventory Management Dashboard</h5>
@@ -173,38 +173,37 @@
                 <div class="modal-body p-0">
                     <div id="inventoryCarousel" class="carousel slide h-100" data-bs-ride="false" data-bs-interval="false">
 
-                        <!-- Dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#inventoryCarousel" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#inventoryCarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#inventoryCarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                        </div>
+
 
                         <!-- Slides -->
-                        <div class="carousel-inner h-100">
+                        <div class="carousel-inner">
 
-                            <div class="carousel-item active h-100 d-flex justify-content-center align-items-center">
-                                <img src="assets/img/inventory-1.jpg"
-                                     class="preview-img"
-                                     alt="Inventory Screenshot 1">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center align-items-center carousel-frame">
+                                    <img src="assets/img/inventory-1.jpg"
+                                         class="carousel-img"
+                                         alt="Inventory Screenshot 1">
+                                </div>
                             </div>
 
-                            <div class="carousel-item h-100 d-flex justify-content-center align-items-center">
-                                <img src="assets/img/inventory-2.jpg"
-                                     class="preview-img"
-                                     alt="Inventory Screenshot 2">
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center carousel-frame">
+                                    <img src="assets/img/inventory-2.jpg"
+                                         class="carousel-img"
+                                         alt="Inventory Screenshot 2">
+                                </div>
                             </div>
 
-                            <div class="carousel-item h-100 d-flex justify-content-center align-items-center">
-                                <img src="assets/img/inventory-3.jpg"
-                                     class="preview-img"
-                                     alt="Inventory Screenshot 3">
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center carousel-frame">
+                                    <img src="assets/img/inventory-3.jpg"
+                                         class="carousel-img"
+                                         alt="Inventory Screenshot 3">
+                                </div>
                             </div>
 
                         </div>
+
 
                         <!-- Arrow controls -->
                         <button class="carousel-control-prev" type="button"
@@ -220,7 +219,17 @@
 
                     </div>
                 </div>
+                <!-- INDICATORS IN FOOTER -->
+                <div class="modal-footer justify-content-center">
 
+                    <div class="carousel-indicators position-static">
+                        <button type="button" data-bs-target="#inventoryCarousel" data-bs-slide-to="0"
+                                class="active"></button>
+                        <button type="button" data-bs-target="#inventoryCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#inventoryCarousel" data-bs-slide-to="2"></button>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -229,7 +238,7 @@
 
     <!-- LaPreTina fullscreen preview (carousel) -->
     <div class="modal fade" id="lapretinaModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content bg-dark">
                 <div class="modal-header border-0">
                     <h5 class="modal-title text-white">LaPreTina Product Showcase</h5>
@@ -240,38 +249,39 @@
                 <div class="modal-body p-0">
                     <div id="lapretinaCarousel" class="carousel slide h-100" data-bs-ride="carousel">
 
-                        <!-- Dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#lapretinaCarousel" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#lapretinaCarousel" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#lapretinaCarousel" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                        </div>
+
+
 
                         <!-- Slides -->
-                        <div class="carousel-inner h-100">
+                        <div class="carousel-inner">
 
-                            <div class="carousel-item active h-100 d-flex justify-content-center align-items-center">
-                                <img src="assets/img/lapretina-1.jpg"
-                                     class="preview-img"
-                                     alt="LaPreTina Screenshot 1">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center align-items-center carousel-frame">
+                                    <img src="assets/img/lapretina-1.jpg"
+                                         class="carousel-img"
+                                         alt="LaPreTina Screenshot 1">
+                                </div>
                             </div>
 
-                            <div class="carousel-item h-100 d-flex justify-content-center align-items-center">
-                                <img src="assets/img/lapretina-2.jpg"
-                                     class="preview-img"
-                                     alt="LaPreTina Screenshot 2">
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center carousel-frame">
+                                    <img src="assets/img/lapretina-2.jpg"
+                                         class="carousel-img"
+                                         alt="LaPreTina Screenshot 2">
+                                </div>
                             </div>
 
-                            <div class="carousel-item h-100 d-flex justify-content-center align-items-center">
-                                <img src="assets/img/lapretina-3.jpg"
-                                     class="preview-img"
-                                     alt="LaPreTina Screenshot 3">
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center carousel-frame">
+                                    <img src="assets/img/lapretina-3.jpg"
+                                         class="carousel-img"
+                                         alt="LaPreTina Screenshot 3">
+                                </div>
                             </div>
 
                         </div>
+
+
 
                         <!-- Arrow controls -->
                         <button class="carousel-control-prev" type="button"
@@ -287,7 +297,17 @@
 
                     </div>
                 </div>
+                <!-- INDICATORS IN FOOTER -->
+                <div class="modal-footer justify-content-center">
 
+                    <div class="carousel-indicators position-static">
+                        <button type="button" data-bs-target="#lapretinaCarousel" data-bs-slide-to="0"
+                                class="active"></button>
+                        <button type="button" data-bs-target="#lapretinaCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#lapretinaCarousel" data-bs-slide-to="2"></button>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

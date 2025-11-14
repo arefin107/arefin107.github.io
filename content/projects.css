@@ -117,13 +117,7 @@ a {
         box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
 
-/* fullscreen preview image */
-.modal-fullscreen .preview-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background: #000;
-}
+
 
 .modal-img {
     width: 100%;
@@ -132,3 +126,57 @@ a {
     border-radius: 12px;
     background: #000;
 }
+
+/* Fixed “frame” for all slides */
+.carousel-frame {
+    width: 100%;
+    min-height: 320px; /* adjust as you like */
+    padding: 12px;
+}
+
+/* Image sizing inside modal/carousel */
+.carousel-img {
+    max-width: 100%;
+    max-height: 420px; /* keeps tall images under control */
+    object-fit: contain; /* no cropping, full image visible */
+    border-radius: 12px;
+    background: #000; /* nice for screenshots with transparent parts */
+}
+
+/* Dark translucent background behind dots */
+.carousel-indicators {
+    background: rgba(0, 0, 0, 0.45); /* black with opacity */
+    padding: 6px 12px;
+    border-radius: 12px;
+    bottom: 10px; /* keep in visible area */
+}
+
+    /* Improve visibility of dots in dark/light mode */
+    .carousel-indicators [data-bs-target] {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .carousel-indicators .active {
+        background-color: #ffffff;
+    }
+
+/* Dark translucent background for arrow controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px;
+}
+
+/* Background box around the arrow icon */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.55); /* black transparent */
+    padding: 18px;
+    border-radius: 50%;
+}
+
+/* Make arrow icons white for visibility */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) brightness(2); /* convert built-in arrow to white */
+}
+
