@@ -33,4 +33,30 @@
         }
         localStorage.setItem("ma_theme", theme);
     }
+
+    var coverImages = [
+        "assets/img/cover-1.jpg",
+       
+    ];
+
+    var current = 0;
+    var $cover = $("#coverBg");
+
+    if (coverImages.length === 0) return;
+
+    // Initial background
+    $cover.css("background-image", "url(" + coverImages[0] + ")");
+
+    // Cross-fade between backgrounds
+    function rotateCover() {
+        current = (current + 1) % coverImages.length;
+
+        $cover.fadeOut(700, function () {
+            $cover.css("background-image", "url(" + coverImages[current] + ")");
+            $cover.fadeIn(700);
+        });
+    }
+
+    // Change every 6 seconds
+   // setInterval(rotateCover, 3000);
 });

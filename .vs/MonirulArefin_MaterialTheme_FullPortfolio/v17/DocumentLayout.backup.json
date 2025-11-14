@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{D091658C-8063-46F3-9791-B7E075F54E44}|D:\\Projects\\Portfolio\\arefin107.github.io|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D091658C-8063-46F3-9791-B7E075F54E44}|D:\\Projects\\Portfolio\\arefin107.github.io|d:\\projects\\portfolio\\arefin107.github.io\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D091658C-8063-46F3-9791-B7E075F54E44}|D:\\Projects\\Portfolio\\arefin107.github.io|solutionrelative:contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D091658C-8063-46F3-9791-B7E075F54E44}|D:\\Projects\\Portfolio\\arefin107.github.io|d:\\projects\\portfolio\\arefin107.github.io\\projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D091658C-8063-46F3-9791-B7E075F54E44}|D:\\Projects\\Portfolio\\arefin107.github.io|solutionrelative:projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D091658C-8063-46F3-9791-B7E075F54E44}|D:\\Projects\\Portfolio\\arefin107.github.io|d:\\projects\\portfolio\\arefin107.github.io\\content\\projects.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D091658C-8063-46F3-9791-B7E075F54E44}|D:\\Projects\\Portfolio\\arefin107.github.io|solutionrelative:content\\projects.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D091658C-8063-46F3-9791-B7E075F54E44}|D:\\Projects\\Portfolio\\arefin107.github.io|d:\\projects\\portfolio\\arefin107.github.io\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D091658C-8063-46F3-9791-B7E075F54E44}|D:\\Projects\\Portfolio\\arefin107.github.io|solutionrelative:contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D091658C-8063-46F3-9791-B7E075F54E44}|D:\\Projects\\Portfolio\\arefin107.github.io|d:\\projects\\portfolio\\arefin107.github.io\\content\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -34,39 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -76,14 +48,14 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "D:\\Projects\\Portfolio\\arefin107.github.io\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-14T14:09:48.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "projects.js",
               "DocumentMoniker": "D:\\Projects\\Portfolio\\arefin107.github.io\\scripts\\projects.js",
               "RelativeDocumentMoniker": "scripts\\projects.js",
@@ -96,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "projects.css",
               "DocumentMoniker": "D:\\Projects\\Portfolio\\arefin107.github.io\\content\\projects.css",
               "RelativeDocumentMoniker": "content\\projects.css",
@@ -109,13 +81,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "projects.html",
               "DocumentMoniker": "D:\\Projects\\Portfolio\\arefin107.github.io\\projects.html",
               "RelativeDocumentMoniker": "projects.html",
               "ToolTip": "D:\\Projects\\Portfolio\\arefin107.github.io\\projects.html",
               "RelativeToolTip": "projects.html",
-              "ViewState": "AgIAABsBAAAAAAAAAAAAAPAAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-14T08:22:54.866Z",
               "EditorCaption": ""
@@ -135,13 +107,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "contact.html",
               "DocumentMoniker": "D:\\Projects\\Portfolio\\arefin107.github.io\\contact.html",
               "RelativeDocumentMoniker": "contact.html",
               "ToolTip": "D:\\Projects\\Portfolio\\arefin107.github.io\\contact.html",
               "RelativeToolTip": "contact.html",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAE8AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-14T06:41:41.609Z",
               "EditorCaption": ""

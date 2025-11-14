@@ -12,6 +12,56 @@
     --nav-link-active: #1976D2;
 }
 
+/* Cover banner area */
+.cover-banner {
+    position: relative;
+    height: 140px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/* Background image that slides/fades */
+.cover-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.3px);
+    transform: scale(1.03); /* slight zoom */
+}
+
+/* Dark/light overlay with gradient */
+.cover-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( 90deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15), rgba(0,0,0,0.45) );
+    color: #fff;
+}
+
+/* Text styles */
+.cover-text {
+    max-width: 620px;
+}
+
+.cover-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.cover-subtitle {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    letter-spacing: .02em;
+}
+
+/* Respect your light/dark theme (optional tweak) */
+body.theme-light .cover-overlay {
+    background: linear-gradient( 90deg, rgba(10,132,255,0.12), rgba(10,132,255,0.04), rgba(10,132,255,0.12) );
+    color: #0f172a;
+}
+
+
 /* DARK THEME OVERRIDES */
 body.theme-dark {
     --bg-main: #0d1117;
