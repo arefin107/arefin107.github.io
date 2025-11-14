@@ -1,0 +1,106 @@
+﻿:root {
+    --bg-main: #ECEFF1;
+    --bg-card: #FFFFFF;
+    --accent: #1976D2;
+    --accent-soft: #03A9F4;
+    --text-main: #1F2933;
+    --text-muted: #607D8B;
+    --chip-border: rgba(0,0,0,0.08);
+    --nav-bg: #FFFFFF;
+    --nav-link: #37474F;
+    --nav-link-active: #1976D2;
+}
+
+body.theme-dark {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --accent: #0A84FF;
+    --accent-soft: #36CFC9;
+    --text-main: #ffffff;
+    --text-muted: #d0d7de;
+    --chip-border: rgba(255,255,255,0.12);
+    --nav-bg: #050812;
+    --nav-link: #ECEFF1;
+    --nav-link-active: #36CFC9;
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+a {
+    color: var(--accent);
+}
+
+    a:hover {
+        color: var(--accent-soft);
+    }
+
+.navbar-custom {
+    background: var(--nav-bg);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+        color: var(--nav-link);
+    }
+
+        .navbar-custom .nav-link.active {
+            color: var(--nav-link-active);
+            font-weight: 600;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: var(--nav-link-active);
+        }
+
+.page-wrap {
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.card-custom {
+    background: var(--bg-card);
+    border-radius: 0.9rem;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
+}
+
+    .card-custom:hover {
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        transform: translateY(-2px);
+    }
+
+.brand-text {
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+    .brand-text span.dot {
+        color: var(--accent-soft);
+        padding: 0 4px;
+    }
+
+    .brand-text span.ai {
+        color: var(--accent-soft);
+    }
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: .4rem;
+}
+
+.small-text {
+    font-size: .88rem;
+    color: var(--text-muted);
+}

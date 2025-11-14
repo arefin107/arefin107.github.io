@@ -1,212 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects - Monirul Arefin</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-        /* same styles as index.html */
-        :root {
-            --bg-main: #ECEFF1;
-            --bg-card: #FFFFFF;
-            --accent: #1976D2;
-            --accent-soft: #03A9F4;
-            --text-main: #1F2933;
-            --text-muted: #607D8B;
-            --chip-border: rgba(0,0,0,0.08);
-            --nav-bg: #FFFFFF;
-            --nav-link: #37474F;
-            --nav-link-active: #1976D2;
-        }
-        body.theme-dark {
-            --bg-main: #0d1117;
-            --bg-card: #161b22;
-            --accent: #0A84FF;
-            --accent-soft: #36CFC9;
-            --text-main: #ffffff;
-            --text-muted: #d0d7de;
-            --chip-border: rgba(255,255,255,0.12);
-            --nav-bg: #050812;
-            --nav-link: #ECEFF1;
-            --nav-link-active: #36CFC9;
-        }
-        body {
-            background: var(--bg-main);
-            color: var(--text-main);
-            font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-            transition: background 0.25s ease, color 0.25s ease;
-        }
-        a { color: var(--accent); }
-        a:hover { color: var(--accent-soft); }
-        .navbar-custom {
-            background: var(--nav-bg);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-        }
-        .navbar-custom .navbar-brand,
-        .navbar-custom .nav-link { color: var(--nav-link); }
-        .navbar-custom .nav-link.active {
-            color: var(--nav-link-active);
-            font-weight: 600;
-        }
-        .navbar-custom .nav-link:hover { color: var(--nav-link-active); }
-        .page-wrap { min-height: 100vh; padding: 40px 0; }
-        .card-custom {
-            background: var(--bg-card);
-            border-radius: 0.9rem;
-            border: none;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
-        }
-        .card-custom:hover {
-            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-            transform: translateY(-2px);
-        }
-        .brand-text {
-            font-weight: 800;
-            font-size: 0.95rem;
-            letter-spacing: 0.16em;
-            text-transform: uppercase;
-        }
-        .brand-text span.dot { color: var(--accent-soft); padding: 0 4px; }
-        .brand-text span.ai { color: var(--accent-soft); }
-        .section-title {
-          text-transform: uppercase;
-          font-size: 0.8rem;
-          letter-spacing: 0.12em;
-          color: var(--accent);
-          margin-bottom: .4rem;
-        }
-  </style>
+    <meta charset="UTF-8">
+    <title>Projects - Monirul Arefin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/projects.css?v=11142025v1" rel="stylesheet" />
 </head>
 <body class="theme-light">
 
-<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="assets/img/monirul.arefin.jpg" width="32" height="32" class="me-2 rounded" alt="Logo">
-      <span class="brand-text">MA<span class="dot">•</span><span class="ai">AI</span></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-          <button id="themeToggle" class="btn btn-sm btn-outline-primary">🌞 Light</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="page-wrap">
-  <div class="container">
-    <div class="mb-4">
-      <div class="section-title">Projects</div>
-      <h2 class="h3">Selected Works</h2>
-      <p class="text-muted small">
-        A selection of .NET, SQL, front-end, and AI projects that demonstrate my experience building real-world systems.
-      </p>
-    </div>
-
-    <div class="row g-3">
-      <div class="col-md-6">
-        <div class="card card-custom h-100 p-3">
-          <h5>CRM Web Application (.NET MVC + SQL)</h5>
-          <p class="small text-muted">
-            Developed a CRM system for managing leads, customers, and follow-ups. Implemented role-based access,
-            dashboards, and reporting using ASP.NET MVC, Entity Framework, and SQL Server.
-          </p>
-          <ul class="small text-muted">
-            <li>Lead tracking and status pipeline</li>
-            <li>Secure authentication and authorization</li>
-            <li>Responsive UI with Bootstrap</li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/img/monirul.arefin.jpg" width="32" height="32" class="me-2 rounded" alt="Logo">
+                <span class="brand-text">MA<span class="dot">•</span><span class="ai">AI</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button id="themeToggle" class="btn btn-sm btn-outline-primary">🌞 Light</button>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
 
-      <div class="col-md-6">
-        <div class="card card-custom h-100 p-3">
-          <h5>AI Chat-to-SQL Assistant (Python + OpenAI)</h5>
-          <p class="small text-muted">
-            Built a natural language interface that converts user questions into SQL queries, executes them on SQL Server,
-            and returns structured results.
-          </p>
-          <ul class="small text-muted">
-            <li>Python backend using FastAPI</li>
-            <li>OpenAI API for NLP understanding</li>
-            <li>Secure DB access with parameterized queries</li>
-          </ul>
-        </div>
-      </div>
+    <div class="page-wrap">
+        <div class="container">
+            <div class="mb-4">
+                <div class="section-title">Projects</div>
+                <h2 class="h3">Selected Works</h2>
+                <p class="text-muted small">
+                    A selection of .NET, SQL, front-end, and AI projects that demonstrate my experience building real-world systems.
+                </p>
+            </div>
 
-      <div class="col-md-6">
-        <div class="card card-custom h-100 p-3">
-          <h5>YOLO Object Detection API</h5>
-          <p class="small text-muted">
-            Designed an API for product detection in images using YOLO, exposing prediction endpoints for mobile and web.
-          </p>
-          <ul class="small text-muted">
-            <li>Model loading & prediction endpoints</li>
-            <li>Image upload and preprocessing</li>
-            <li>JSON responses with labels & confidence</li>
-          </ul>
-        </div>
-      </div>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <a href="https://inventory.e2rsoft.com/" target="_blank" class="text-decoration-none">
+                        <div class="card card-custom h-100 p-3">
+                            <h5 class="mb-2">Inventory Management Dashboard</h5>
+                            <img src="assets/img/inventory.jpg" class="project-image mb-3" alt="Inventory Dashboard">
+                            <p class="small text-muted">
+                                A full inventory management system with dashboard, product handling, stock movement,
+                                user roles, and real-time business metrics.
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-      <div class="col-md-6">
-        <div class="card card-custom h-100 p-3">
-          <h5>Admin Dashboard & Reporting UI</h5>
-          <p class="small text-muted">
-            Created admin dashboards with filters, tables, and charts using Bootstrap, jQuery, and .NET APIs.
-          </p>
-          <ul class="small text-muted">
-            <li>Dynamic data tables and search</li>
-            <li>Export to Excel / PDF (backend-powered)</li>
-            <li>Reusable layout and components</li>
-          </ul>
+                <div class="col-md-6">
+                    <a href="https://lapretina.e2rsoft.com/" target="_blank" class="text-decoration-none">
+                        <div class="card card-custom h-100 p-3">
+                            <h5 class="mb-2">LaPreTina Product Showcase</h5>
+                            <img src="assets/img/lapretina.jpg" class="project-image mb-3" alt="Lapretina Store">
+                            <p class="small text-muted">
+                                A stylish e-commerce product showcase platform featuring category filters, product grid,
+                                pricing details, and a clean user shopping interface.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom h-100 p-3">
+                        <h5>CRM Web Application (.NET MVC + SQL)</h5>
+                        <p class="small text-muted">
+                            Developed a CRM system for managing leads, customers, and follow-ups. Implemented role-based access,
+                            dashboards, and reporting using ASP.NET MVC, Entity Framework, and SQL Server.
+                        </p>
+                        <ul class="small text-muted">
+                            <li>Lead tracking and status pipeline</li>
+                            <li>Secure authentication and authorization</li>
+                            <li>Responsive UI with Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom h-100 p-3">
+                        <h5>AI Chat-to-SQL Assistant (Python + OpenAI)</h5>
+                        <p class="small text-muted">
+                            Built a natural language interface that converts user questions into SQL queries, executes them on SQL Server,
+                            and returns structured results.
+                        </p>
+                        <ul class="small text-muted">
+                            <li>Python backend using FastAPI</li>
+                            <li>OpenAI API for NLP understanding</li>
+                            <li>Secure DB access with parameterized queries</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom h-100 p-3">
+                        <h5>YOLO Object Detection API</h5>
+                        <p class="small text-muted">
+                            Designed an API for product detection in images using YOLO, exposing prediction endpoints for mobile and web.
+                        </p>
+                        <ul class="small text-muted">
+                            <li>Model loading & prediction endpoints</li>
+                            <li>Image upload and preprocessing</li>
+                            <li>JSON responses with labels & confidence</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom h-100 p-3">
+                        <h5>Admin Dashboard & Reporting UI</h5>
+                        <p class="small text-muted">
+                            Created admin dashboards with filters, tables, and charts using Bootstrap, jQuery, and .NET APIs.
+                        </p>
+                        <ul class="small text-muted">
+                            <li>Dynamic data tables and search</li>
+                            <li>Export to Excel / PDF (backend-powered)</li>
+                            <li>Reusable layout and components</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a href="contact.html" class="btn btn-primary btn-sm">Hire Me for a Similar Project →</a>
+            </div>
         </div>
-      </div>
     </div>
 
-    <div class="mt-4">
-      <a href="contact.html" class="btn btn-primary btn-sm">Hire Me for a Similar Project →</a>
-    </div>
-  </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  $(function () {
-    var $body = $("body");
-    var $toggle = $("#themeToggle");
-    var savedTheme = localStorage.getItem("ma_theme") || "light";
-    setTheme(savedTheme);
-
-    $toggle.on("click", function () {
-      var current = $body.hasClass("theme-dark") ? "dark" : "light";
-      var next = current === "light" ? "dark" : "light";
-      setTheme(next);
-    });
-
-    function setTheme(theme) {
-      if (theme === "dark") {
-        $body.removeClass("theme-light").addClass("theme-dark");
-        $toggle.removeClass("btn-outline-primary").addClass("btn-outline-light")
-               .text("🌙 Dark");
-      } else {
-        $body.removeClass("theme-dark").addClass("theme-light");
-        $toggle.removeClass("btn-outline-light").addClass("btn-outline-primary")
-               .text("🌞 Light");
-      }
-      localStorage.setItem("ma_theme", theme);
-    }
-  });
-</script>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/projects.js?v=11142025v1"></script>
 </body>
 </html>
